@@ -7,7 +7,10 @@ const MenuComponent = (props) => {
       {
         Object.keys(rootData).map(id => {
           return (
-          <div key={id} className={`items ${props.displayId === id ? "menu-active" : ""}`} onClick={(e) => props.changeId(id)}>
+          <div key={id} className={`items ${props.displayId === id ? "menu-active" : ""}`}
+            onClick={(e) => {
+              props.changeId(id)
+            }}>
             {rootData[id]["foldername"]}
           </div>)
         })
