@@ -7,7 +7,7 @@ import * as serviceWorker from './serviceWorker';
 const rootEl = document.getElementById('root');
 ReactDOM.render(<App />, rootEl);
 
-serviceWorker.unregister();
+// serviceWorker.unregister();
 
 if (module.hot) {
   module.hot.accept('./App', () => {
